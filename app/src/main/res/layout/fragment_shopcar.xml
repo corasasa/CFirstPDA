@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/color_orange"
+        app:tabIndicatorHeight="5dp"
+        app:tabBackground="@color/color_green"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/color_orange"
+        app:tabTextAppearance="@style/tab_textstyle"
+        app:tabTextColor="@color/color_gray"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_topTab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="购物车"
+        android:textColor="@color/color_red"
+        android:textSize="20sp" />
+</LinearLayout>

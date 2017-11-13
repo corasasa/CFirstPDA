@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_tab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rgp_tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#d6d6d4"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/rbt_menu_home"
+            style="@style/menu_tab_theme"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:text="首页"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbt_menu_weitao"
+            style="@style/menu_tab_theme"
+            android:drawableTop="@drawable/selector_tab_weitao"
+            android:text="消息"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbt_menu_shopcar"
+            style="@style/menu_tab_theme"
+            android:drawableTop="@drawable/selector_tab_shopcar"
+            android:text="购物车"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rbt_menu_mime"
+            style="@style/menu_tab_theme"
+            android:drawableTop="@drawable/selector_tab_mime"
+            android:text="我的"
+            android:textSize="14sp" />
+    </RadioGroup>
+</LinearLayout>
